@@ -1,0 +1,104 @@
+<!doctype html>
+<html>
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+        </script>
+<link rel="stylesheet" href="/rfsBTMNDRSkeTNTn"/><script  type="text/javascript"  src="/qwxbmMcOOYMSABmK"></script><script  type="text/javascript"  src="/TOaP8uQgdgIJnc8D"></script></head>
+
+<body class="p-3">
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+        </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+        </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+        </script>
+    <h1>Yin-Yang puzzles</h1>
+    <div class="container col-12 width="100%">
+        <div class="row">
+            <div class="col-lg-1 col-md-4 bg-primary text-white p-2 rounded mb-2">
+                <b>Rules</b>
+            </div>
+            <div class="col-lg-5 col-md-4">
+                In a Yin Yang puzzle, it's required to colour all the cells in a grid in one of two colours, such that (i) all cells of one colour are orthogonally connected to each other, and so are all cells of the other colour, and (ii) no 2x2 region is wholly one colour
+            </div>
+            <div class="col-lg-6 col-md-4">
+                <img src="images/basic.png"/>
+            </div>
+        </div>
+        <div class="row ">
+            <div class="col-lg-1 col-md-4 bg-info text-white p-2 rounded mb-2">
+                <i>No 2x2 checkerboard possible<br>0 or 2 colour changes on boundary</i>
+            </div>
+            <div class="col-lg-5 col-md-4">
+                It's easily seen that no 2x2 region can be coloured in checkerboard fashion - alternation of colours around the square, nor can we have an alternation of for regions around the border, both because if one colour is connected the other cannot be. The second fact also shows that either (i) all the border cells are one colour, or (ii) the border cells split into at most two continuous blocks of cells around the border.
+
+            </div>
+            <div class="col-lg-6 col-md-4">
+                <img src="images/Facts.png"/>
+            </div>
+        </div>
+        <a id="odd-border-edge"/>
+        <div class="row">
+            <div class="col-lg-1 col-md-4 bg-info text-white p-2 rounded mb-2">
+                <i>There are an odd number of edge cells of each colour when boundary is two-coloured (</i>m<i> or </i>n<i> or both odd</i>)
+
+            </div>
+            <div class="col-lg-5 col-md-4">
+                In the case where the border is split into two colour blocks, then the number of border edge cells (not corner cells) in each of the two blocks is constrained. Consider the boundary between the two colours. It starts and ends on the border of the grid, if the border is split. It must also pass through every point which is a centre of a 2x2 once each. If it did not, there would be a 2x2 of one colour - against the rules. If it visited twice, that is the same as a checkerboard pattern in a 2x2, which has already been ruled out.
+            </div>
+            <div class="col-lg-6 col-md-4">
+                <img src="images/boundary_eg.png"/> 
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-1 col-md-4 bg-info text-white p-2 rounded mb-2">
+                <b></b>
+            </div>
+            <div class="col-lg-5 col-md-4">
+                If these centres are coloured alternately black and white we see also that the boundary visits white and black cells alternately. If there are equal numbers of white and black centres, (as there is for an m x n grid whenever either or both of m and n are odd, such as 9 x 9), then the first centre it vists after starting on the grid border must be an opposite colour to the last centre before it finishes on the border. Counting around the border, this will always mean that there are an odd number of border edge cells between the first and last boundary steps.
+            </div>
+            <div class="col-lg-6 col-md-4">
+                <img src="images/poss2annotated.png"/> 
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-1 col-md-4 bg-info text-white p-2 rounded mb-2">
+                <i>The boundary may all be one colour</i>
+            </div>
+            <div class="col-lg-5 col-md-4">
+                If the border cells are all the same colour, that implies that the boundary forms a closed loop.
+            </div>
+            <div class="col-lg-6 col-md-4">
+                <img src="images/poss1.png"/> 
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-1 col-md-4 bg-info text-white p-2 rounded mb-2">
+                <i> If </i>m, n<i> both even, the boundary splits into two blocks with an even number of edge cells</i> 
+            </div>
+            <div class="col-lg-5 col-md-4">
+                For grids where m and n are both even, the number of 2x2 centres is odd and cannot balance. No closed loop is possible; the boundary must break the border in to two colour blocks, and must enter and exit from a white centre (as drawn here) so both blocks have an even number of edge cells.
+            </div>
+            <div class="col-lg-6 col-md-4">
+                <img src="images/poss8x8.png"/> 
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
