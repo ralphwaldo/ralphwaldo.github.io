@@ -1,0 +1,111 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>Yin Yang Summary</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+    <style>
+      .card-title {
+        padding: 10px 10px 15px 15px;
+        background-color:aqua;
+        min-height: 75px;
+      }
+    </style>
+</head>
+
+<body class="p-3">
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+
+
+  <div class="card-group">
+    <div class="card">
+      <h5 class="card-title">Rules</h5>
+      <img src="images/basic.png" class="card-img-top" style="max-width: 256px">
+
+      <div class="card-body">
+        <p class="card-text">Colour all the cells one of two colours (or, shade some cells but not others), such that:
+        </p>
+      </div>
+
+      <ul >
+        <li >all cells of one colour are orthogonally connected</li>
+        <li>all cells of the other colour are orthogonally connected</li>
+        <li >no 2x2 block consists entirely of cells of one colour</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h5 class="card-title">First secret</h5>
+      <img src="images/Fact1-try.png" class="card-img-top" style="max-width: 256px">
+
+      <div class="card-body">
+        <p class="card-text">No 2x2 block of cells can show a checkerboard pattern</p>
+      </div>
+
+    </div>
+    <div class="card">
+      <h5 class="card-title">Second secret</h5>
+      <img src="images/Fact2-try.png" class="card-img-top" style="max-width: 256px">
+
+      <div class="card-body">
+        <p class="card-text">The border cells cannot be split into four separate blocks of colours</p>
+      </div>
+
+
+    </div>
+    <div class="card">
+      <h5 class="card-title">Third secret (odd grids)</h5>
+      <img src="images/boundary_edge.png" class="card-img-top" style="max-width: 256px">
+
+      <div class="card-body">
+        <p class="card-text"> The number of <b>edge</b> cells of each colour is <b>odd</b> (if the boundary is not all the same colour)
+        </p>
+      </div>
+
+
+    </div>
+    <div class="card">
+      <h5 class="card-title">Third secret (even grids)</h5>
+      <img src="images/boundary_edge_8.png" class="card-img-top" style="max-width: 256px">
+
+      <div class="card-body">
+        <p class="card-text">The number of <b>edge</b> cells of each
+          colour is <b>even</b> (and the border <b>must</b> be split into two colour blocks)</p>
+          <p class="card-text">Additionally the blocks of edge cells of one colour adjacent to corner cells are also even in length </p>
+      </div>
+
+
+    </div>
+    <div class="card">
+      <h5 class="card-title">Explanation</h5>
+
+      <div class="card-body">
+        <a href="yinyang.html">See here</a>
+      </div>
+
+
+    </div>
+  </div>
+
+
+
+</body>
+
+</html>
