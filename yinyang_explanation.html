@@ -1,0 +1,143 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>Yin Yang Secrets Explanations</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <style>
+    .card-title {
+      padding: 10px 10px 15px 15px;
+      min-height: 75px;
+    }
+  </style>
+</head>
+
+<body class="p-3">
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+
+
+  <div class="card-group">
+
+    <div class="card">
+      <h5 class="card-title text-white bg-info">First secret</h5>
+      <img src="images/Fact1-try.png" class="card-img-top" style="max-width: 256px">
+
+      <div class="card-body">
+        <p class="card-text">Attempting to connect two cells of one colour isolates the cells of the other colour.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <h5 class="card-title text-white bg-info">Second secret</h5>
+      <img src="images/Fact2-try.png" class="card-img-top" style="max-width: 256px">
+
+      <div class="card-body">
+        <p class="card-text">Attempting to connect border blocks of one colour isolates the border blocks of the other
+          colour.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <h5 class="card-title text-white bg-info">Third secret</h5>
+      <img src="images/poss1.png" class="card-img-top" style="max-width: 256px">
+
+      <div class="card-body">
+        <p class="card-text"> The boundary between the two colours can form a single loop, corresponding to all the
+          border cells being the same colour.
+        </p>
+        <p class="card-text">More than one loop would imply two separated blocks of the same colour.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <h5 class="card-title text-white bg-info"></h5>
+      <img src="images/poss2.png" class="card-img-top" style="max-width: 256px">
+
+      <div class="card-body">
+        <p class="card-text"> The boundary may alternatively end on the border in two places, dividing the border into
+          two blocks.
+        </p>
+        <p class="card-text">More than one line, or a line and a separate loop, would also would imply separated blocks
+          of colour, breaking the connectivity requirement. </p>
+      </div>
+    </div>
+
+    <div class="card">
+      <h5 class="card-title text-white bg-info"></h5>
+      <img src="images/boundary_eg_locked.png" class="card-img-top" style="max-width: 256px">
+
+      <div class="card-body">
+        <p class="card-text"> The boundary visits each point where 4 cells meet, once each.
+        </p>
+        <p class="card-text">Passing through twice implies a checkerboard pattern as forbidden by the first secret.</p>
+        <p class="card-text">Not passing through implies all four cells of a 2x2 are the same colour, which is forbidden
+          by the rules.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <h5 class="card-title text-white bg-info"></h5>
+      <img src="images/poss2uncoloured.png" class="card-img-top" style="max-width: 256px">
+
+      <div class="card-body">
+        <p class="card-text"> The points where 4 cells meet can be coloured alternately white and black, checkerboard fashion.
+        </p>
+        <p class="card-text">However the boundary moves, it must also pass alternately through white and black points.</p>
+        <p class="card-text">Depending on the number of dots, parity considerations limit where the boundary can emerge onto the border. </p>
+      </div>
+    </div>
+
+    <div class="card">
+      <h5 class="card-title text-white bg-info"><i>m</i> x <i>n</i> grids<br><i>m</i>  or <i>n</i> odd</h5>
+      <img src="images/poss2annotated.png" class="card-img-top" style="max-width: 256px">
+
+      <div class="card-body">
+        <p class="card-text"> The number of white and black dots is equal, and the total number is even.
+        </p>
+        <p class="card-text">The boundary visits a white dot first and a black dot last.</p>
+        <p class="card-text">The boundary can form a closed loop.</p>
+        <p class="card-text">Or, the boundary meets the border in two places, leaving from different coloured dots. </p>
+        <p class="card-text">Counting between these places, an <b>odd</b> number of edge cells are passed.</p>
+      </div>
+    </div>
+
+
+    <div class="card">
+      <h5 class="card-title text-white bg-info"><i>m</i> x <i>n</i> grids<br><i>m</i> and <i>n</i> even</h5>
+      <img src="images/poss8x8.png" class="card-img-top" style="max-width: 256px">
+
+      <div class="card-body">
+        <p class="card-text"> The number of white dots exceeds the number of black by 1, and the total number is odd.
+        </p>
+        <p class="card-text">No closed loop is possible.</p>
+        <p class="card-text">The boundary must meet the border, leaving from white dots both times. </p><p>Counting between these places, an <b>even</b> number of edge cells are passed.</p>
+      </div>
+    </div>
+
+
+
+  </div>
+
+
+
+</body>
+
+</html>
