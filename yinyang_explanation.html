@@ -63,7 +63,7 @@
         <p class="card-text"> The boundary between the two colours can form a single loop, corresponding to all the
           border cells being the same colour.
         </p>
-        <p class="card-text">More than one loop would imply two separated blocks of the same colour.</p>
+        <p class="card-text">More than one loop would imply two separated blocks of the same colour, breaking the connectivity requirement.</p>
       </div>
     </div>
 
@@ -75,8 +75,8 @@
         <p class="card-text"> The boundary may alternatively end on the border in two places, dividing the border into
           two blocks.
         </p>
-        <p class="card-text">More than one line, or a line and a separate loop, would also would imply separated blocks
-          of colour, breaking the connectivity requirement. </p>
+        <p class="card-text">More than one line, or a line and a separate loop, would imply separated blocks
+          of the same colour, breaking the connectivity requirement. </p>
       </div>
     </div>
 
@@ -87,7 +87,7 @@
       <div class="card-body">
         <p class="card-text"> The boundary visits each point where 4 cells meet, once each.
         </p>
-        <p class="card-text">Passing through twice implies a checkerboard pattern as forbidden by the first secret.</p>
+        <p class="card-text">Passing through twice implies a checkerboard pattern as ruled out by the first secret.</p>
         <p class="card-text">Not passing through implies all four cells of a 2x2 are the same colour, which is forbidden
           by the rules.</p>
       </div>
@@ -100,7 +100,7 @@
       <div class="card-body">
         <p class="card-text"> The points where 4 cells meet can be coloured alternately white and black, checkerboard fashion.
         </p>
-        <p class="card-text">However the boundary moves, it must also pass alternately through white and black points.</p>
+        <p class="card-text">Whereever the boundary moves, it must pass alternately through white and black points.</p>
         <p class="card-text">Depending on the number of dots, parity considerations limit where the boundary can emerge onto the border. </p>
       </div>
     </div>
@@ -110,11 +110,11 @@
       <img src="images/poss2annotated.png" class="card-img-top" style="max-width: 256px">
 
       <div class="card-body">
-        <p class="card-text"> The number of white and black dots is equal, and the total number is even.
+        <p class="card-text">If either edge contains an odd number of cells, the number of white and black dots is equal, and their total number is even.
         </p>
         <p class="card-text">The boundary visits a white dot first and a black dot last.</p>
         <p class="card-text">The boundary can form a closed loop.</p>
-        <p class="card-text">Or, the boundary meets the border in two places, leaving from different coloured dots. </p>
+        <p class="card-text">Or, the boundary meets the border in two places, joining from different coloured dots. </p>
         <p class="card-text">Counting between these places, an <b>odd</b> number of edge cells are passed.</p>
       </div>
     </div>
@@ -125,10 +125,10 @@
       <img src="images/poss8x8.png" class="card-img-top" style="max-width: 256px">
 
       <div class="card-body">
-        <p class="card-text"> The number of white dots exceeds the number of black by 1, and the total number is odd.
+        <p class="card-text">If both edged have an even numbder of cells, the number of white dots exceeds the number of black by 1, and their total number is odd.
         </p>
         <p class="card-text">No closed loop is possible.</p>
-        <p class="card-text">The boundary must meet the border, leaving from white dots both times. </p><p>Counting between these places, an <b>even</b> number of edge cells are passed.</p>
+        <p class="card-text">The boundary must meet the border, joining from white dots both times. </p><p>Counting between these places, an <b>even</b> number of edge cells are passed.</p>
       </div>
     </div>
 
