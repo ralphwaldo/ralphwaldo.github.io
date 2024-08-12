@@ -18,6 +18,7 @@
       padding: 10px 10px 15px 15px;
       min-height: 75px;
     }
+
     .card {
       min-width: 250px;
       max-width: 250px;
@@ -37,107 +38,124 @@
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
     </script>
 
+  <div class="row row-cols-1 row-cols-md-3 row-cols-lg-4  g-4">
+    <div class="col">
 
-  <div class="card-group">
+      <div class="card">
+        <h5 class="card-title text-white bg-info">First secret</h5>
+        <img src="images/Fact1-try.png" class="card-img-top" style="max-width: 256px">
 
-    <div class="card">
-      <h5 class="card-title text-white bg-info">First secret</h5>
-      <img src="images/Fact1-try.png" class="card-img-top" style="max-width: 256px">
-
-      <div class="card-body">
-        <p class="card-text">Attempting to connect two cells of one colour isolates the cells of the other colour.</p>
+        <div class="card-body">
+          <p class="card-text">Attempting to connect two cells of one colour isolates the cells of the other colour.</p>
+        </div>
       </div>
     </div>
+    <div class="col">
+      <div class="card">
+        <h5 class="card-title text-white bg-info">Second secret</h5>
+        <img src="images/Fact2-try.png" class="card-img-top" style="max-width: 256px">
 
-    <div class="card">
-      <h5 class="card-title text-white bg-info">Second secret</h5>
-      <img src="images/Fact2-try.png" class="card-img-top" style="max-width: 256px">
-
-      <div class="card-body">
-        <p class="card-text">Attempting to connect border blocks of one colour isolates the border blocks of the other
-          colour.</p>
+        <div class="card-body">
+          <p class="card-text">Attempting to connect border blocks of one colour isolates the border blocks of the other
+            colour.</p>
+        </div>
       </div>
     </div>
+    <div class="col">
+      <div class="card">
+        <h5 class="card-title text-white bg-info">Third secret<br>The boundary forms a loop...</h5>
+        <img src="images/poss1.png" class="card-img-top" style="max-width: 256px">
 
-    <div class="card">
-      <h5 class="card-title text-white bg-info">Third secret</h5>
-      <img src="images/poss1.png" class="card-img-top" style="max-width: 256px">
-
-      <div class="card-body">
-        <p class="card-text"> The boundary between the two colours can form a single loop, corresponding to all the
-          border cells being the same colour.
-        </p>
-        <p class="card-text">More than one loop would imply two separated blocks of the same colour, breaking the connectivity requirement.</p>
+        <div class="card-body">
+          <p class="card-text"> The boundary between the two colours can form a single loop, corresponding to all the
+            border cells being the same colour.
+          </p>
+          <p class="card-text">More than one loop would imply two separated blocks of the same colour, breaking the
+            connectivity requirement.</p>
+        </div>
       </div>
     </div>
+    <div class="col">
+      <div class="card">
+        <h5 class="card-title text-white bg-info">...or a line touching the border...</h5>
+        <img src="images/poss2.png" class="card-img-top" style="max-width: 256px">
 
-    <div class="card">
-      <h5 class="card-title text-white bg-info"></h5>
-      <img src="images/poss2.png" class="card-img-top" style="max-width: 256px">
-
-      <div class="card-body">
-        <p class="card-text"> The boundary may alternatively end on the border in two places, dividing the border into
-          two blocks.
-        </p>
-        <p class="card-text">More than one line, or a line and a separate loop, would imply separated blocks
-          of the same colour, breaking the connectivity requirement. </p>
+        <div class="card-body">
+          <p class="card-text"> The boundary may alternatively end on the border in two places, dividing the border into
+            two blocks.
+          </p>
+          <p class="card-text">More than one line, or a line and a separate loop, would imply separated blocks
+            of the same colour, breaking the connectivity requirement. </p>
+        </div>
       </div>
     </div>
+    <div class="col">
+      <div class="card">
+        <h5 class="card-title text-white bg-info">...visits each internal point once...</h5>
+        <img src="images/boundary_eg_locked.png" class="card-img-top" style="max-width: 256px">
 
-    <div class="card">
-      <h5 class="card-title text-white bg-info"></h5>
-      <img src="images/boundary_eg_locked.png" class="card-img-top" style="max-width: 256px">
-
-      <div class="card-body">
-        <p class="card-text"> The boundary visits each point where 4 cells meet, once each.
-        </p>
-        <p class="card-text">Passing through twice implies a checkerboard pattern as ruled out by the first secret.</p>
-        <p class="card-text">Not passing through implies all four cells of a 2x2 are the same colour, which is forbidden
-          by the rules.</p>
+        <div class="card-body">
+          <p class="card-text"> The boundary visits each point where 4 cells meet, once each.
+          </p>
+          <p class="card-text">Passing through twice implies a checkerboard pattern as ruled out by the first secret.
+          </p>
+          <p class="card-text">Not passing through implies all four cells of a 2x2 are the same colour, which is
+            forbidden
+            by the rules.</p>
+        </div>
       </div>
     </div>
+    <div class="col">
+      <div class="card">
+        <h5 class="card-title text-white bg-info">...alternating between white and black...</h5>
+        <img src="images/poss2uncoloured.png" class="card-img-top" style="max-width: 256px">
 
-    <div class="card">
-      <h5 class="card-title text-white bg-info"></h5>
-      <img src="images/poss2uncoloured.png" class="card-img-top" style="max-width: 256px">
-
-      <div class="card-body">
-        <p class="card-text"> The points where 4 cells meet can be coloured alternately white and black, checkerboard fashion.
-        </p>
-        <p class="card-text">Wherever the boundary moves, it must pass alternately through white and black points.</p>
-        <p class="card-text">Depending on the number of dots, parity considerations limit where the boundary can emerge onto the border. </p>
+        <div class="card-body">
+          <p class="card-text"> The points where 4 cells meet can be coloured alternately white and black, checkerboard
+            fashion.
+          </p>
+          <p class="card-text">Wherever the boundary moves, it must pass alternately through white and black points.</p>
+          <p class="card-text">Depending on the number of dots, parity considerations limit where the boundary can
+            emerge onto the border. </p>
+        </div>
       </div>
     </div>
+    <div class="col">
+      <div class="card">
+        <h5 class="card-title text-white bg-info"><i>m</i> x <i>n</i> grids<br><i>m</i> or <i>n</i> odd</h5>
+        <img src="images/poss2annotated.png" class="card-img-top" style="max-width: 256px">
 
-    <div class="card">
-      <h5 class="card-title text-white bg-info"><i>m</i> x <i>n</i> grids<br><i>m</i>  or <i>n</i> odd</h5>
-      <img src="images/poss2annotated.png" class="card-img-top" style="max-width: 256px">
-
-      <div class="card-body">
-        <p class="card-text">If either side contains an odd number of cells, the number of white and black dots is equal, and their total number is even.
-        </p>
-        <p class="card-text">The boundary visits a white dot first and a black dot last.</p>
-        <p class="card-text">The boundary can form a closed loop.</p>
-        <p class="card-text">Or, the boundary meets the border in two places, joining from different coloured dots. </p>
-        <p class="card-text">Counting between these places, an <b>odd</b> number of edge cells are passed.</p>
+        <div class="card-body">
+          <p class="card-text">If either side contains an odd number of cells, the number of white and black dots is
+            equal, and their total number is even.
+          </p>
+          <p class="card-text">So, the boundary visits a white dot first and a black dot last.</p>
+          <p class="card-text">Either, the boundary can form a closed loop;</p>
+          <p class="card-text">Or, the boundary meets the border in two places, joining from different coloured dots...
+          </p>
+          <p class="card-text">...and counting between these places, an <b>odd</b> number of edge cells are passed.</p>
+        </div>
       </div>
     </div>
+    <div class="col">
 
+      <div class="card">
+        <h5 class="card-title text-white bg-info"><i>m</i> x <i>n</i> grids<br><i>m</i> and <i>n</i> even</h5>
+        <img src="images/poss8x8.png" class="card-img-top" style="max-width: 256px">
 
-    <div class="card">
-      <h5 class="card-title text-white bg-info"><i>m</i> x <i>n</i> grids<br><i>m</i> and <i>n</i> even</h5>
-      <img src="images/poss8x8.png" class="card-img-top" style="max-width: 256px">
-
-      <div class="card-body">
-        <p class="card-text">If both sides have an even number of cells, the number of white dots exceeds the number of black by 1, and their total number is odd.
-        </p>
-        <p class="card-text">No closed loop is possible.</p>
-        <p class="card-text">The boundary must meet the border, joining from white dots both times. </p><p>Counting between these places, an <b>even</b> number of edge cells are passed.</p>
+        <div class="card-body">
+          <p class="card-text">If both sides have an even number of cells, all corner dots are the same colour, let's
+            say white. Then the number of white dots exceeds the number of black by 1, and their total number is odd.
+          </p>
+          <p class="card-text">So, no closed loop is possible,</p>
+          <p class="card-text">and, the boundary must meet the border, joining from white dots both times... </p>
+          <p>...and counting between these places, an <b>even</b> number of edge cells are passed.</p>
+        </div>
       </div>
+
+
+
     </div>
-
-
-
   </div>
 
 
